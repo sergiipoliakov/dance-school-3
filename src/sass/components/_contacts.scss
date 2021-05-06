@@ -1,0 +1,321 @@
+.contacts-form-section {
+  margin-left: auto;
+  margin-right: auto;
+  // max-width: $mobile;
+
+  outline: 1px solid $accent-color;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+    width: $tablet-min;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+
+    width: $desktop;
+  }
+}
+
+.form-сontainer {
+  background-color: #191c26;
+  display: block;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  padding-left: 31px;
+  padding-right: 31px;
+
+  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-left: 55px;
+    padding-right: 55px;
+    width: 50%;
+  }
+}
+
+.contacts-time-сontainer {
+  // display: block;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  padding-left: 31px;
+  padding-right: 31px;
+
+  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+    padding-left: 39px;
+    padding-right: 39px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 0px;
+    width: 50%;
+  }
+
+  background-image: linear-gradient(
+      to right,
+      rgba(25, 28, 38, 0.9),
+      rgba(25, 28, 38, 0.9)
+    ),
+    url(/images/contacts/mob-contacts.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: $tablet-min) {
+    background-image: linear-gradient(
+        to right,
+        rgba(25, 28, 38, 0.9),
+        rgba(25, 28, 38, 0.9)
+      ),
+      url(/images/contacts/tabl-contacts.jpg);
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(
+        to right,
+        rgba(25, 28, 38, 0.9),
+        rgba(25, 28, 38, 0.9)
+      ),
+      url(/images/contacts/desc-contacts.jpg);
+  }
+}
+
+.contacts-сontainer {
+  @media screen and (max-width: $mobile-max) {
+    margin-bottom: 44px;
+  }
+
+  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+    width: 50%;
+    margin-right: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 70px;
+  }
+}
+
+.form-title {
+  margin: 0 0 44px 0;
+  padding: 0;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  // identical 49px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: $primary-white;
+
+  @media screen and (min-width: $tablet-min) {
+    text-align: start;
+  }
+}
+
+.flex-div {
+  // TO DO
+  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+    display: flex;
+    // justify-content: space-between;
+    // align-items: baseline;
+  }
+}
+.form-flex-input {
+  margin-bottom: 44px;
+  @media screen and (min-width: $tablet-min) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $tablet-min) {
+    &-item {
+      width: 50%;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+.form-field:not(:last-child) {
+  margin-bottom: 44px;
+}
+
+// .form-label {
+//   position: relative;
+// }
+
+.form-input {
+  // TO DO: hover color of placeholder: white
+  padding-bottom: 8px;
+  width: 100%;
+
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  /* 15px, identical to box height */
+
+  letter-spacing: 0.1em;
+  // text-transform: uppercase;
+
+  color: $text-color-2;
+  background-color: rgba(189, 157, 181, 0);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid $text-color-2;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: $primary-white;
+    border-color: $primary-white;
+  }
+}
+
+.form-input:focus::-webkit-input-placeholder {
+  color: $primary-white;
+}
+
+// placeholder {
+//   color: transparent;
+// }
+
+.button-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 44px;
+  margin-left: auto;
+  @media screen and (min-width: $tablet-min) {
+    justify-content: flex-start;
+  }
+}
+
+.address {
+  @media screen and (min-width: $tablet-min) {
+    width: 230px;
+  }
+  // width: 330px;
+}
+
+.address-item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  & > a {
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+
+    letter-spacing: 0.02em;
+
+    color: $text-color-2;
+    text-decoration: none;
+  }
+  &-link {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.map-pin-svg {
+  @media screen and (min-width: $tablet-min) {
+    // padding-top: 3px;
+    position: relative;
+    transform: translateY(-50%);
+    // align-self: flex-start;
+  }
+}
+
+.icon-form {
+  margin-right: 16px;
+}
+
+.mail {
+  text-decoration: underline;
+}
+
+// .massage {
+//   // TO DO: Висоту як в макеті
+//   @media screen and (min-width: $tablet-min) {
+//     // rows: 10;
+//   }
+
+//   @media screen and (min-width: $desktop) {
+//     // rows: 20;
+//   }
+// }
+
+.working-time-сontainer {
+  // padding-bottom: 84px;
+  @media screen and (min-width: $tablet-min) {
+    width: 50%;
+  }
+  // @extend %container;
+}
+
+.working-time-title {
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  /* 15px, identical to box height */
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: $primary-white;
+
+  &::before {
+    // content: '';
+    // display: inline-block;
+    // width: 60px;
+    // height: 4px;
+    // color: rgba(157, 164, 189, 0.4);
+    // margin-right: 20px;
+    // padding: 0;
+
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    border-radius: 2px;
+    margin-right: 20px;
+    // padding: 0;
+    background-color: rgba(157, 164, 189, 0.4);
+  }
+}
+
+.working-time-text {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+
+  letter-spacing: 0.02em;
+
+  color: $text-color-2;
+}
+
+.form-box {
+  display: block;
+  padding-top: 84px;
+  padding-bottom: 84px;
+
+  //   background-color: #191c26;
+}

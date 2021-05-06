@@ -1,0 +1,85 @@
+<section class="contacts-form-section">
+  <div class="form-сontainer">
+    <h2 class="form-title">Онлайн запись</h2>
+    <form class="">
+      <div class="form-flex-input">
+        <div class="form-field form-flex-input-item">
+          <label for="customer-name">
+            <input
+              class="form-input"
+              type="text"
+              placeholder="ИМЯ*"
+              name="customer-name"
+              id="customer-name"
+            />
+          </label>
+        </div>
+        <div class="form-field form-flex-input-item">
+          <label for="customer-phone"
+            ><input
+              class="form-input"
+              type="tel"
+              placeholder="ТЕЛЕФОН*"
+              name="customer-phone"
+              id="customer-phone"
+            />
+          </label>
+        </div>
+      </div>
+      <div class="form-field">
+        <textarea
+          class="massage form-input"
+          name="massage"
+          placeholder="СООБЩЕНИЕ"
+          id="massage"
+          rows="4"
+        ></textarea>
+        <label class="massage-label" for="massage"></label>
+        <!-- <textarea width="448px" height="120px"></textarea> -->
+      </div>
+      <div class="button-box">
+        <button class="form-button button-bg-black" type="submit">
+          отправить
+        </button>
+      </div>
+    </form>
+  </div>
+  <div class="contacts-time-сontainer">
+    <h2 class="form-title">Контакты</h2>
+    <div class="flex-div">
+      <address class="contacts-сontainer">
+        <ul class="">
+          <li class="address-item">
+            <a class="address-item-link map-pin-svg-parent" href="">
+              <svg width="24" height="24" class="map-pin-svg icon-form">
+                <use href="./images/sprite.svg#map-pin"></use>
+              </svg>
+              <span class="address">ул, М. Максимовича, 28В Киев, м.Васильковская, ЖК. Новая Англия
+              </span></a
+            >
+          </li>
+          <li class="address-item">
+            <a class="address-item-link" href="tel:+380441111111">
+              <svg width="24" height="24" class="icon-form">
+                <use href="./images/sprite.svg#phone"></use>
+              </svg>
+              +38 044 111 11 11</a
+            >
+          </li>
+          <li class="address-item mail">
+            <a class="address-item-link" href="mailto:barbershop@email.com">
+              <svg width="24" height="24" class="icon-form">
+                <use href="./images/sprite.svg#mail"></use>
+              </svg>
+              elenagolovanwork@gmail.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <div class="working-time-сontainer">
+        <div class="working-time-title">время работы</div>
+        <span class="working-time-text">Ежедневно с 13:00 до 18:00</span>
+      </div>
+    </div>
+  </div>
+</section>

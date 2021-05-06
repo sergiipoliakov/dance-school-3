@@ -1,0 +1,11 @@
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+
+// Стили для файла с примером HTML-фрагмента
+
+@import './util/module';
+@import './base/module';
+@import './layout/module';
+@import './components/module';

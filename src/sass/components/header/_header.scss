@@ -1,0 +1,121 @@
+.slider {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  // outline: 1px solid $accent-color;
+  overflow: hidden;
+  width: 100%;
+  min-height: 580px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    max-width: 480px;
+    min-height: 580px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    min-height: 680px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    min-height: 680px;
+  }
+}
+
+.siema {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+
+  width: 480px;
+
+  @media screen and (min-width: 768px) {
+    width: 609px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1125px;
+  }
+}
+
+.siema-buttons {
+  position: absolute;
+  bottom: 40px;
+  right: 49px;
+  min-width: 146px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.prev,
+.next {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.36;
+  letter-spacing: 0.01em;
+  color: $primary-white;
+
+  min-width: 60px;
+  min-height: 24px;
+  cursor: pointer;
+}
+
+.prev {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background-color: $primary-white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.next {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background-color: $primary-white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.prev:hover,
+.prev:focus,
+.next:hover,
+.next:focus {
+  color: $accent-color;
+  outline: none;
+}
+
+.prev:hover,
+.prev:focus,
+.next:hover,
+.next:focus {
+  &:after {
+    background-color: $accent-color;
+    outline: none;
+  }
+}

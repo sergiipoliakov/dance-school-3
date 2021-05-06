@@ -1,0 +1,13 @@
+.contacts-container {
+  @extend %container;
+  @media screen and (max-width: $mobile-max) {
+    padding: 0;
+  }
+  @media screen and (min-width: $tablet-min) {
+    padding: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 0;
+    display: flex;
+  }
+}

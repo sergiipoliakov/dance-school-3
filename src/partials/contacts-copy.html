@@ -1,0 +1,71 @@
+<div class="contacts-container">
+  <!-- TODO: форма онлайн записи -->
+  <section class="form-section">
+    <h2 class="form-title">Онлайн запись</h2>
+    <form>
+      <div class="form-block">
+        <label class="form-label">
+          <input class="form-field" type="text" placeholder=" " name="name" />
+          <span class="label-name">имя*</span>
+        </label>
+
+        <label class="form-label"
+          ><input class="form-filed" type="tel" placeholder=" " name="phone" />
+          <span class="label-name">телефон*</span>
+        </label>
+      </div>
+      <label class="form-lavel">
+        <textarea
+          class="form-filed"
+          name="comment"
+          placeholder=" "
+          cols="30"
+          rows="10"
+        ></textarea>
+        <span class="label-name">сообщение</span>
+      </label>
+
+      <button class="button-bg-black" type="submit">
+        отправить
+      </button>
+    </form>
+  </section>
+  <!-- TODO: блок контактної інформації -->
+  <section class="contacts-section">
+    <h2 class="form-title">Контакты</h2>
+    <div class="flex-div">
+      <address class="add-сontainer">
+        <ul class="address">
+          <li class="address-item">
+            <a class="address-item-link" href="">
+              <svg width="24" height="24" class="icon-form">
+                <use href="./images/sprite.svg#map-pin"></use>
+              </svg>
+              ул. Васильковая, 7А Киев, 08132</a
+            >
+          </li>
+          <li class="address-item">
+            <a class="address-item-link" href="tel:+380441111111">
+              <svg width="24" height="24" class="icon-form">
+                <use href="./images/sprite.svg#phone"></use>
+              </svg>
+              +38 044 111 11 11</a
+            >
+          </li>
+          <li class="address-item mail">
+            <a class="address-item-link" href="mailto:barbershop@email.com">
+              <svg width="24" height="24" class="icon-form">
+                <use href="./images/sprite.svg#mail"></use>
+              </svg>
+              barbershop@email.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <div class="working-time-сontainer">
+        <h3 class="working-time-title">время работы</h3>
+        <span class="working-time-text">Ежедневно с 9:00 до 22:00</span>
+      </div>
+    </div>
+  </section>
+</div>

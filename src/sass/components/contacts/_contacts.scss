@@ -1,0 +1,20 @@
+.contacts-сontainer {
+  display: block;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+    padding: 84px 31px;
+  }
+  @media screen and (min-width: $tablet-min) {
+    width: $tablet-min;
+    padding: 100px 39px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    padding-top: 130px;
+    padding-right: 40px;
+    padding-bottom: 193px;
+    padding-left: 55px;
+    width: 50%;
+  }
+}
