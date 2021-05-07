@@ -189,11 +189,197 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../fonts/Northwell.eot":[["Northwell.7e0027ca.eot","fonts/Northwell.eot"],"fonts/Northwell.eot"],"./../fonts/Northwell.woff":[["Northwell.77d3559d.woff","fonts/Northwell.woff"],"fonts/Northwell.woff"],"./../fonts/Northwell.ttf":[["Northwell.c5c13e30.ttf","fonts/Northwell.ttf"],"fonts/Northwell.ttf"],"./../fonts/Northwell.svg":[["Northwell.2336f004.svg","fonts/Northwell.svg"],"fonts/Northwell.svg"],"./../images/main-bg-img.jpg":[["main-bg-img.e4b0a884.jpg","images/main-bg-img.jpg"],"images/main-bg-img.jpg"],"./../images/service1/mob-Services-and-prices.jpg":[["mob-Services-and-prices.965409fb.jpg","images/service1/mob-Services-and-prices.jpg"],"images/service1/mob-Services-and-prices.jpg"],"./../images/service1/tabl-Services-and-prices.jpg":[["tabl-Services-and-prices.07a97fec.jpg","images/service1/tabl-Services-and-prices.jpg"],"images/service1/tabl-Services-and-prices.jpg"],"./../images/service1/desk-Services-and-prices.jpg":[["desk-Services-and-prices.de2cfac1.jpg","images/service1/desk-Services-and-prices.jpg"],"images/service1/desk-Services-and-prices.jpg"],"/Users/poliakovsergii/Documents/GitHub/dance-school-3/src/images/contacts/mob-contacts.jpg":[["mob-contacts.a9326e9b.jpg","images/contacts/mob-contacts.jpg"],"images/contacts/mob-contacts.jpg"],"/Users/poliakovsergii/Documents/GitHub/dance-school-3/src/images/contacts/tabl-contacts.jpg":[["tabl-contacts.4398bdbd.jpg","images/contacts/tabl-contacts.jpg"],"images/contacts/tabl-contacts.jpg"],"/Users/poliakovsergii/Documents/GitHub/dance-school-3/src/images/contacts/desc-contacts.jpg":[["desc-contacts.969565c6.jpg","images/contacts/desc-contacts.jpg"],"images/contacts/desc-contacts.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./../fonts/Northwell.eot":[["Northwell.7e0027ca.eot","fonts/Northwell.eot"],"fonts/Northwell.eot"],"./../fonts/Northwell.woff":[["Northwell.77d3559d.woff","fonts/Northwell.woff"],"fonts/Northwell.woff"],"./../fonts/Northwell.ttf":[["Northwell.c5c13e30.ttf","fonts/Northwell.ttf"],"fonts/Northwell.ttf"],"./../fonts/Northwell.svg":[["Northwell.2336f004.svg","fonts/Northwell.svg"],"fonts/Northwell.svg"],"./../images/main-bg-img.jpg":[["main-bg-img.e4b0a884.jpg","images/main-bg-img.jpg"],"images/main-bg-img.jpg"],"./../images/service1/mob-Services-and-prices.jpg":[["mob-Services-and-prices.965409fb.jpg","images/service1/mob-Services-and-prices.jpg"],"images/service1/mob-Services-and-prices.jpg"],"./../images/service1/tabl-Services-and-prices.jpg":[["tabl-Services-and-prices.07a97fec.jpg","images/service1/tabl-Services-and-prices.jpg"],"images/service1/tabl-Services-and-prices.jpg"],"./../images/service1/desk-Services-and-prices.jpg":[["desk-Services-and-prices.de2cfac1.jpg","images/service1/desk-Services-and-prices.jpg"],"images/service1/desk-Services-and-prices.jpg"],"/Users/poliakovsergii/Documents/GitHub/dance-school-3/src/images/contacts/mob-contacts.jpg":[["mob-contacts.a9326e9b.jpg","images/contacts/mob-contacts.jpg"],"images/contacts/mob-contacts.jpg"],"/Users/poliakovsergii/Documents/GitHub/dance-school-3/src/images/contacts/tabl-contacts.jpg":[["tabl-contacts.4398bdbd.jpg","images/contacts/tabl-contacts.jpg"],"images/contacts/tabl-contacts.jpg"],"/Users/poliakovsergii/Documents/GitHub/dance-school-3/src/images/contacts/desc-contacts.jpg":[["desc-contacts.969565c6.jpg","images/contacts/desc-contacts.jpg"],"images/contacts/desc-contacts.jpg"],"./../images/icon-close.svg":[["icon-close.1add023a.svg","images/icon-close.svg"],"images/icon-close.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"gallery-items.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = [{
+  preview: 'https://cdn.pixabay.com/photo/2021/05/07/11/36/11-36-11-901_640.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/05/07/11/36/11-36-11-901_640.jpg',
+  name: 'Елена Головань',
+  description: 'Hokkaido Flower'
+}, {
+  preview: 'https://cdn.pixabay.com/photo/2021/05/07/11/43/11-43-33-539_640.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/05/07/11/43/11-43-33-539_640.jpg',
+  name: 'Елена Головань',
+  description: 'Container Haulage Freight'
+}, {
+  preview: 'https://cdn.pixabay.com/photo/2021/05/07/11/43/11-43-33-733_640.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/05/07/11/43/11-43-33-733_640.jpg',
+  name: 'Елена Головань',
+  description: 'Aerial Beach View'
+}, {
+  preview: 'https://cdn.pixabay.com/photo/2021/05/07/11/43/11-43-43-518_640.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/05/07/11/43/11-43-43-518_640.jpg',
+  name: 'Елена Головань',
+  description: 'Flower Blooms'
+}, {
+  preview: 'https://cdn.pixabay.com/photo/2021/05/07/11/43/11-43-43-431_640.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/05/07/11/43/11-43-43-431_640.jpg',
+  name: 'Елена Головань',
+  description: 'Alpine Mountains'
+}, {
+  preview: 'https://cdn.pixabay.com/photo/2021/05/07/11/43/11-43-52-862_640.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/05/07/11/43/11-43-52-862_640.jpg',
+  name: 'Елена Головань',
+  description: 'Mountain Lake Sailing'
+}, {
+  preview: 'https://cdn.pixabay.com/photo/2021/05/07/11/43/11-43-52-795_640.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/05/07/11/43/11-43-52-795_640.jpg',
+  name: 'Елена Головань',
+  description: 'Alpine Spring Meadows'
+}, {
+  preview: 'https://cdn.pixabay.com/photo/2021/05/07/11/47/11-47-46-32_640.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/05/07/11/47/11-47-46-32_640.jpg',
+  name: 'Елена Головань',
+  description: 'Lighthouse Coast Sea'
+}];
+exports.default = _default;
+},{}],"gallery.js":[function(require,module,exports) {
+"use strict";
+
+var _galleryItems = _interopRequireDefault(require("./gallery-items.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log(_galleryItems.default);
+var galleryList = document.querySelector('.js-gallery');
+var imagesMarkup = createImagesMarkup(_galleryItems.default);
+galleryList.insertAdjacentHTML('beforeend', imagesMarkup);
+
+function createImagesMarkup(images) {
+  return images.map(function (_ref) {
+    var preview = _ref.preview,
+        original = _ref.original,
+        description = _ref.description,
+        name = _ref.name;
+    return "\n    <li class=\"item gallery__item\">\n    \n  <a\n    class=\"gallery__link\"\n   href='".concat(original, "';\n  >\n    <img\n      class=\"gallery__image\"\n      src=\"").concat(preview, "\"\n      data-source=\"").concat(original, "\"\n      alt=\"").concat(description, "\"\n    />\n  </a>\n</li>\n");
+  }).join('');
+}
+},{"./gallery-items.js":"gallery-items.js"}],"modal.js":[function(require,module,exports) {
+"use strict";
+
+var _galleryItems = _interopRequireDefault(require("./gallery-items.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var lightboxContainer = document.querySelector('.js-lightbox');
+var galleryList = document.querySelector('.js-gallery');
+var modalImage = document.querySelector('.lightbox__image'); // console.log(modalImage);
+
+var closeModalBtn = document.querySelector('button[data-action="close-lightbox"]');
+var backdrop = document.querySelector('.lightbox__overlay');
+galleryList.addEventListener('click', openModal);
+closeModalBtn.addEventListener('click', closeModal);
+backdrop.addEventListener('click', onBackDropClick);
+
+function openModal(evt) {
+  var modalImageSrc = evt.target.dataset.source;
+  var modalImageAlt = evt.target.alt; //   console.log(modalImageSrc);
+
+  var isOnImageClick = evt.target.classList.contains('gallery__image'); //   console.log(evt);
+
+  if (!isOnImageClick) {
+    return;
+  }
+
+  evt.preventDefault();
+  lightboxContainer.classList.add('is-open');
+  window.addEventListener('keydown', onEscKeyPress);
+  window.addEventListener('keydown', onArrowRightClick);
+  window.addEventListener('keydown', onArrowLeftClick);
+  makeOriginalImage(modalImageSrc, modalImageAlt);
+}
+
+function closeModal() {
+  window.removeEventListener('keydown', onEscKeyPress);
+  window.removeEventListener('keydown', onArrowRightClick);
+  window.removeEventListener('keydown', onArrowLeftClick);
+  lightboxContainer.classList.remove('is-open');
+  cleanModalImageSrc();
+}
+
+function makeOriginalImage(src, alt) {
+  modalImage.src = src;
+  modalImage.alt = alt; //   console.log(modalImage);
+}
+
+function onBackDropClick() {
+  closeModal();
+}
+
+function onEscKeyPress(evt) {
+  //   console.log(evt);
+  if (evt.code === 'Escape') {
+    closeModal();
+  }
+}
+
+function onArrowRightClick(evt) {
+  // Ищем текущую картинку в массиве images.find
+  var currentImage = _galleryItems.default.find(function (image) {
+    return image.original === modalImage.src;
+  }); //   console.log(currentImage);
+
+
+  if (evt.code === 'ArrowRight') {
+    //   к индексу текущей картинке добавим 1 чтоб назначить следующую картинку
+    var nextModalImageIndex = _galleryItems.default.indexOf(currentImage) + 1; // console.log(nextModalImageIndex);
+    // console.log(images[nextModalImageIndex]);
+    // когда все картинки в массиве закончелись назначаем первую картинку в массиве
+
+    if (_galleryItems.default[nextModalImageIndex] === undefined) {
+      modalImage.src = _galleryItems.default[0].original;
+      modalImage.alt = _galleryItems.default[0].description;
+      return;
+    }
+
+    modalImage.src = _galleryItems.default[nextModalImageIndex].original;
+    modalImage.alt = _galleryItems.default[nextModalImageIndex].description;
+  }
+}
+
+function onArrowLeftClick(evt) {
+  // Ищем текущую картинку в массиве images.find
+  var currentImage = _galleryItems.default.find(function (image) {
+    return image.original === modalImage.src;
+  }); //   console.log(currentImage);
+
+
+  if (evt.code === 'ArrowLeft') {
+    //   от индексу текущей картинке отнимем 1 чтоб назначить предыдущую картинку
+    var previousModalImageIndex = _galleryItems.default.indexOf(currentImage) - 1; // console.log(images[previousModalImageIndex]);
+    // когда все картинки в массиве закончелись назначаем последнюю картинку в массиве
+
+    if (_galleryItems.default[previousModalImageIndex] === undefined) {
+      modalImage.src = _galleryItems.default[_galleryItems.default.length - 1].original;
+      modalImage.alt = _galleryItems.default[_galleryItems.default.length - 1].description;
+      return;
+    }
+
+    modalImage.src = _galleryItems.default[previousModalImageIndex].original;
+    modalImage.alt = _galleryItems.default[previousModalImageIndex].description;
+  }
+}
+
+function cleanModalImageSrc() {
+  modalImage.src = '';
+  modalImage.alt = '';
+}
+},{"./gallery-items.js":"gallery-items.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./sass/main.scss");
-},{"./sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+require("./gallery-items");
+
+require("./gallery");
+
+require("./modal");
+},{"./sass/main.scss":"sass/main.scss","./gallery-items":"gallery-items.js","./gallery":"gallery.js","./modal":"modal.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -221,7 +407,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58054" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53930" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
