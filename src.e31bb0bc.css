@@ -864,20 +864,20 @@ img {
 @media screen and (max-width: 767px) {
   .about1__container {
     padding-top: 84px;
-    padding-bottom: 84px;
+    padding-bottom: 24px;
   }
 }
 @media screen and (min-width: 768px) {
   .about1__container {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
   }
 }
 @media screen and (min-width: 1280px) {
   .about1__container {
     padding-top: 130px;
     padding-right: 91px;
-    padding-bottom: 130px;
+    padding-bottom: 20px;
   }
 }
 .about1-subtitle {
@@ -963,6 +963,18 @@ img {
     line-height: 1.86;
     color: #555555;
   }
+}
+
+.dance-list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+  font-weight: 900;
+}
+
+.dance-list > li {
+  letter-spacing: 0.02em;
+  padding: 5px;
 }
 
 .service-container {
