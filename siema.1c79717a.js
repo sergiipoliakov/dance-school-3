@@ -127,10 +127,17 @@ var _siema = _interopRequireDefault(require("siema"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var mySiema = new _siema.default();
+var mySiema = new _siema.default({
+  duration: 1200,
+  loop: true
+});
 var refs = {
   indicators: Array.from(document.querySelectorAll('.image-number'))
 };
+var timerId = setInterval(function () {
+  console.log('qweqeq');
+  mySiema.next();
+}, 4000);
 
 var findActiveIndex = function findActiveIndex() {
   return refs.indicators.findIndex(function (elem) {
@@ -140,6 +147,7 @@ var findActiveIndex = function findActiveIndex() {
 
 document.querySelector('.prev').addEventListener('click', function () {
   mySiema.prev();
+  clearInterval(timerId);
   var prevElemIndex = findActiveIndex();
 
   if (prevElemIndex === 0) {
@@ -151,6 +159,7 @@ document.querySelector('.prev').addEventListener('click', function () {
 });
 document.querySelector('.next').addEventListener('click', function () {
   mySiema.next();
+  clearInterval(timerId);
   var prevElemIndex = findActiveIndex();
 
   if (prevElemIndex === refs.indicators.length - 1) {
@@ -188,7 +197,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51557" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60133" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
