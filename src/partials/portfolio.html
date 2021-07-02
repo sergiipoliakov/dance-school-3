@@ -1,77 +1,26 @@
 <section>
-  <div class="portfolio-container">
+  <div class="portfolio-container" id="portfolio">
     <div class="subtitle-container">
       <p class="portfolio-subtitle">
         Наше Портфолио
       </p>
     </div>
     <h2 class="portfolio-title">Портфолио</h2>
-    <ul class="portfolio-list">
-      <li class="item">
-        
-        <img
-        class="team-img"
-        src="./images/portfolio/portfolio-0.jpg"
-        alt="Делают стрижку"
-      />
-      </li>
-      <li class="item">
-        
-        <img
-        class="team-img"
-        src="./images/portfolio/portfolio-1.jpg"
-        alt="Делают стрижку"
-      />
-      </li>
-      <li class="item">
-       
-        <img
-        class="team-img"
-        src="./images/portfolio/portfolio-3.jpg"
-        alt="Делают стрижку"
-      />
-      </li>
-      <li class="item">
-       
-        <img
-        class="team-img"
-        src="./images/portfolio/portfolio-4.jpg"
-        alt="Делают стрижку"
-      />
-      </li>
-      <li class="item">
-       
-        <img
-        class="team-img"
-        src="./images/portfolio/portfolio-5.jpg"
-        alt="Делают стрижку"
-      />
-      </li>
-      <li class="item">
-       
-        <img
-        class="team-img"
-        src="./images/portfolio/portfolio-6.jpg"
-        alt="Делают стрижку"
-      />
-      </li>
-      <li class="item">
-       
-        <img
-        class="team-img"
-        src="./images/portfolio/portfolio-7.jpg"
-        alt="Делают стрижку"
-      />
-      </li>
-      <li class="item">
-       
-        <img
-        class="team-img"
-        src="./images/portfolio/portfolio-8.jpg"
-        alt="Делают стрижку"
-      />
-      </li>
-      
+    <ul class="portfolio-list js-gallery">
     </ul>
   </div>
 </section>
+
+<div class="lightbox js-lightbox">
+  <div class="lightbox__overlay"></div>
+
+  <div class="lightbox__content">
+    <img class="lightbox__image" src="" alt="" />
+  </div>
+
+  <button
+    type="button"
+    class="lightbox__button"
+    data-action="close-lightbox"
+  ></button>
+</div>

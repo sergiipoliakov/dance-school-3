@@ -1,15 +1,20 @@
 import Siema from 'siema';
-const mySiema = new Siema();
+const mySiema = new Siema({ duration: 1200, loop: true });
 
 const refs = {
   indicators: Array.from(document.querySelectorAll('.image-number')),
 };
+let timerId = setInterval(() => {
+  console.log('qweqeq');
+  mySiema.next();
+}, 4000);
 
 const findActiveIndex = () =>
   refs.indicators.findIndex(elem => elem.classList.contains('is-check'));
 
 document.querySelector('.prev').addEventListener('click', () => {
   mySiema.prev();
+  clearInterval(timerId);
 
   const prevElemIndex = findActiveIndex();
 
@@ -23,6 +28,7 @@ document.querySelector('.prev').addEventListener('click', () => {
 
 document.querySelector('.next').addEventListener('click', () => {
   mySiema.next();
+  clearInterval(timerId);
 
   const prevElemIndex = findActiveIndex();
 
