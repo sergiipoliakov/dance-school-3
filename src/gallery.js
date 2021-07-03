@@ -1,5 +1,5 @@
 import images from './gallery-items.js';
-console.log(images);
+// console.log(images);
 
 const galleryList = document.querySelector('.js-gallery');
 

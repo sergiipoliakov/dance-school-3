@@ -5,7 +5,6 @@ const refs = {
   indicators: Array.from(document.querySelectorAll('.image-number')),
 };
 let timerId = setInterval(() => {
-  console.log('qweqeq');
   mySiema.next();
 }, 4000);
 
