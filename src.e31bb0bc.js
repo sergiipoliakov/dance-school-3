@@ -245,7 +245,7 @@ var _galleryItems = _interopRequireDefault(require("./gallery-items.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log(_galleryItems.default);
+// console.log(images);
 var galleryList = document.querySelector('.js-gallery');
 var imagesMarkup = createImagesMarkup(_galleryItems.default);
 galleryList.insertAdjacentHTML('beforeend', imagesMarkup);
@@ -442,7 +442,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52982" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64205" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

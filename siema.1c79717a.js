@@ -135,7 +135,6 @@ var refs = {
   indicators: Array.from(document.querySelectorAll('.image-number'))
 };
 var timerId = setInterval(function () {
-  console.log('qweqeq');
   mySiema.next();
 }, 4000);
 
@@ -197,7 +196,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52982" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64205" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
