@@ -197,10 +197,10 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _default = [{
-  preview: 'https://cdn.pixabay.com/photo/2021/07/02/20/35/20-35-32-857_640.jpg',
+  preview: '../dist/portfolio/portfolio-0.jpg',
   original: 'https://cdn.pixabay.com/photo/2021/07/02/20/35/20-35-32-857_1280.jpg',
   name: 'Елена Головань',
-  description: 'Hokkaido Flower'
+  description: 'qwe'
 }, {
   preview: 'https://cdn.pixabay.com/photo/2021/07/02/21/03/21-03-41-635_640.jpg',
   original: 'https://cdn.pixabay.com/photo/2021/07/02/21/03/21-03-41-635_1280.jpg',
@@ -217,8 +217,8 @@ var _default = [{
   name: 'Елена Головань',
   description: 'Flower Blooms'
 }, {
-  preview: 'https://cdn.pixabay.com/photo/2021/07/02/21/11/21-11-33-619_640.jpg',
-  original: 'https://cdn.pixabay.com/photo/2021/07/02/21/11/21-11-33-619_1280.jpg',
+  preview: 'https://cdn.pixabay.com/photo/2021/07/02/21/04/eg-6382568_640.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/07/02/21/04/eg-6382568_1280.jpg',
   name: 'Елена Головань',
   description: 'Alpine Mountains'
 }, {
@@ -442,7 +442,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64205" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51291" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
