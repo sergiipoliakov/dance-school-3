@@ -197,45 +197,46 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _default = [{
-  preview: '../dist/portfolio/portfolio-0.jpg',
-  original: 'https://cdn.pixabay.com/photo/2021/07/02/20/35/20-35-32-857_1280.jpg',
+  preview: 'https://cdn.pixabay.com/photo/2021/07/02/20/35/eg-6382509__340.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/07/02/20/35/eg-6382509_1280.jpg',
   name: 'Елена Головань',
   description: 'qwe'
 }, {
-  preview: 'https://cdn.pixabay.com/photo/2021/07/02/21/03/21-03-41-635_640.jpg',
-  original: 'https://cdn.pixabay.com/photo/2021/07/02/21/03/21-03-41-635_1280.jpg',
+  preview: 'https://cdn.pixabay.com/photo/2021/07/02/21/03/dance-6382566__340.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/07/02/21/03/dance-6382566_1280.jpg',
+  name: 'Елена Головань',
+  description: 'qwe'
+}, {
+  preview: 'https://cdn.pixabay.com/photo/2021/07/02/21/04/dance-6382569__340.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/07/02/21/04/dance-6382569_1280.jpg',
   name: 'Елена Головань',
   description: 'Container Haulage Freight'
-}, {
-  preview: 'https://cdn.pixabay.com/photo/2021/07/02/21/03/21-03-26-348_640.jpg',
-  original: 'https://cdn.pixabay.com/photo/2021/07/02/21/03/21-03-26-348_1280.jpg',
+}, //
+{
+  preview: 'https://cdn.pixabay.com/photo/2021/07/02/21/11/balet-6382579__340.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/07/02/21/11/balet-6382579_1280.jpg',
   name: 'Елена Головань',
-  description: 'Aerial Beach View'
+  description: 'dence school'
 }, {
-  preview: 'https://cdn.pixabay.com/photo/2021/07/02/21/04/21-04-06-33_640.jpg',
-  original: 'https://cdn.pixabay.com/photo/2021/07/02/21/04/21-04-06-33_1280.jpg',
+  preview: 'https://cdn.pixabay.com/photo/2021/07/02/21/11/balet-6382577__340.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/07/02/21/11/balet-6382577_1280.jpg',
   name: 'Елена Головань',
   description: 'Flower Blooms'
 }, {
-  preview: 'https://cdn.pixabay.com/photo/2021/07/02/21/04/eg-6382568_640.jpg',
-  original: 'https://cdn.pixabay.com/photo/2021/07/02/21/04/eg-6382568_1280.jpg',
+  preview: 'https://cdn.pixabay.com/photo/2021/07/02/21/03/novaya-6382567__340.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/07/02/21/03/novaya-6382567_1280.jpg',
   name: 'Елена Головань',
   description: 'Alpine Mountains'
 }, {
-  preview: 'https://cdn.pixabay.com/photo/2021/07/02/21/04/21-04-15-976_640.jpg',
-  original: 'https://cdn.pixabay.com/photo/2021/07/02/21/04/21-04-15-976_1280.jpg',
+  preview: 'https://cdn.pixabay.com/photo/2021/07/02/21/04/eg-6382568__340.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/07/02/21/04/eg-6382568_1280.jpg',
   name: 'Елена Головань',
   description: 'Mountain Lake Sailing'
 }, {
-  preview: 'https://cdn.pixabay.com/photo/2021/07/02/21/11/21-11-06-816_640.jpg',
-  original: 'https://cdn.pixabay.com/photo/2021/07/02/21/11/21-11-06-816_1280.jpg',
+  preview: 'https://cdn.pixabay.com/photo/2021/07/02/21/10/balet-6382576__340.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/07/02/21/10/balet-6382576_1280.jpg',
   name: 'Елена Головань',
   description: 'Alpine Spring Meadows'
-}, {
-  preview: 'https://cdn.pixabay.com/photo/2021/07/02/21/10/21-10-48-249_640.jpg',
-  original: 'https://cdn.pixabay.com/photo/2021/07/02/21/10/21-10-48-249_1280.jpg',
-  name: 'Елена Головань',
-  description: 'Lighthouse Coast Sea'
 }];
 exports.default = _default;
 },{}],"gallery.js":[function(require,module,exports) {
@@ -245,7 +246,6 @@ var _galleryItems = _interopRequireDefault(require("./gallery-items.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// console.log(images);
 var galleryList = document.querySelector('.js-gallery');
 var imagesMarkup = createImagesMarkup(_galleryItems.default);
 galleryList.insertAdjacentHTML('beforeend', imagesMarkup);
@@ -256,7 +256,7 @@ function createImagesMarkup(images) {
         original = _ref.original,
         description = _ref.description,
         name = _ref.name;
-    return "\n    <li class=\"item gallery__item\">\n    \n  <a\n    class=\"gallery__link\"\n   href='".concat(original, "';\n  >\n    <img\n      class=\"gallery__image\"\n      src=\"").concat(preview, "\"\n      data-source=\"").concat(original, "\"\n      alt=\"").concat(description, "\"\n    />\n  </a>\n</li>\n");
+    return "\n    <li class=\"item gallery__item\">\n\n  <a\n    class=\"gallery__link\"\n   href='".concat(original, "';\n  >\n    <img\n      class=\"gallery__image\"\n      src=\"").concat(preview, "\"\n      data-source=\"").concat(original, "\"\n      alt=\"").concat(description, "\"\n    />\n  </a>\n</li>\n");
   }).join('');
 }
 },{"./gallery-items.js":"gallery-items.js"}],"modal.js":[function(require,module,exports) {
@@ -442,7 +442,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51291" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54643" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
