@@ -4,4 +4,4 @@ var e;!function(t,i){"object"==typeof exports&&"object"==typeof module?module.ex
 },{}],"uegD":[function(require,module,exports) {
 "use strict";var e=t(require("siema"));function t(e){return e&&e.__esModule?e:{default:e}}var n=new e.default({duration:1200,loop:!0}),c={indicators:Array.from(document.querySelectorAll(".image-number"))},r=setInterval(function(){n.next()},4e3),i=function(){return c.indicators.findIndex(function(e){return e.classList.contains("is-check")})};document.querySelector(".prev").addEventListener("click",function(){n.prev(),clearInterval(r);var e=i();0!==e&&(c.indicators[e].classList.remove("is-check"),c.indicators[e-1].classList.add("is-check"))}),document.querySelector(".next").addEventListener("click",function(){n.next(),clearInterval(r);var e=i();e!==c.indicators.length-1&&(c.indicators[e].classList.remove("is-check"),c.indicators[e+1].classList.add("is-check"))});
 },{"siema":"gVZh"}]},{},["uegD"], null)
-//# sourceMappingURL=/dance-school-3/siema.0fa5fe8b.js.map
+//# sourceMappingURL=/siema.0fa5fe8b.js.map
