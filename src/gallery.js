@@ -1,5 +1,4 @@
 import images from './gallery-items.js';
-// console.log(images);
 
 const galleryList = document.querySelector('.js-gallery');
 
@@ -12,7 +11,7 @@ function createImagesMarkup(images) {
     .map(({ preview, original, description, name }) => {
       return `
     <li class="item gallery__item">
-    
+
   <a
     class="gallery__link"
    href='${original}';
