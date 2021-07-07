@@ -228,8 +228,8 @@ var _default = [{
   name: 'Елена Головань',
   description: 'Alpine Mountains'
 }, {
-  preview: 'https://cdn.pixabay.com/photo/2021/07/02/21/04/eg-6382568__340.jpg',
-  original: 'https://cdn.pixabay.com/photo/2021/07/02/21/04/eg-6382568_1280.jpg',
+  preview: 'https://cdn.pixabay.com/photo/2021/07/02/21/04/ballet-dancers-6382568__340.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/07/02/21/04/ballet-dancers-6382568_1280.jpg',
   name: 'Елена Головань',
   description: 'Mountain Lake Sailing'
 }, {
@@ -442,7 +442,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58173" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61790" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
