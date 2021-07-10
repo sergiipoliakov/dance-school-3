@@ -50,9 +50,9 @@ export default [
   },
   {
     preview:
-      'https://cdn.pixabay.com/photo/2021/07/02/21/04/eg-6382568__340.jpg',
+      'https://cdn.pixabay.com/photo/2021/07/02/21/04/ballet-dancers-6382568__340.jpg',
     original:
-      'https://cdn.pixabay.com/photo/2021/07/02/21/04/eg-6382568_1280.jpg',
+      'https://cdn.pixabay.com/photo/2021/07/02/21/04/ballet-dancers-6382568_1280.jpg',
     name: 'Елена Головань',
     description: 'Mountain Lake Sailing',
   },
