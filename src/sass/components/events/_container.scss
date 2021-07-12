@@ -1,9 +1,9 @@
-.service-container {
+.events-container {
   @extend %container;
   text-align: center;
 }
 
-.service__subtitle {
+.events__subtitle {
   display: flex;
   align-items: center;
   text-align: start;
@@ -13,7 +13,7 @@
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(157, 164, 189, 0.6);
+  color: $accent-color;
 
   @media screen and(min-width: $desktop) {
     padding-top: 130px;
@@ -36,7 +36,7 @@
   }
 }
 
-.service__title {
+.events__title {
   text-align: start;
   margin-top: 20px;
   margin-bottom: 44px;
@@ -47,10 +47,10 @@
   color: $primary-white;
 }
 
-.price__container {
+.dataTime__container {
   @media screen and(max-width: $tablet-max) {
     padding: 30px;
-    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    background: linear-gradient(180deg, #202417 0%, rgba(23, 26, 36, 0.2) 100%);
   }
 
   @media screen and (min-width: $tablet-max) {
@@ -58,7 +58,7 @@
   }
 }
 
-.service__button {
+.events__button {
   margin-bottom: 84px;
   margin-top: 50px;
   width: 160px;
