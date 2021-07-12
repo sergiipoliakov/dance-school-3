@@ -5,28 +5,28 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
-.timetabel-container, .portfolio-container, .team-container, .advantages-container, .service-container, .about1__container, .footer-container {
+.timetabel-container, .portfolio-container, .team-container, .advantages-container, .events-container, .about1__container, .footer-container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media screen and (min-width: 480px) {
-  .timetabel-container, .portfolio-container, .team-container, .advantages-container, .service-container, .about1__container, .footer-container {
+  .timetabel-container, .portfolio-container, .team-container, .advantages-container, .events-container, .about1__container, .footer-container {
     width: 480px;
     padding-left: 31px;
     padding-right: 31px;
   }
 }
 @media screen and (min-width: 768px) {
-  .timetabel-container, .portfolio-container, .team-container, .advantages-container, .service-container, .about1__container, .footer-container {
+  .timetabel-container, .portfolio-container, .team-container, .advantages-container, .events-container, .about1__container, .footer-container {
     width: 768px;
     padding-left: 39px;
     padding-right: 39px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .timetabel-container, .portfolio-container, .team-container, .advantages-container, .service-container, .about1__container, .footer-container {
+  .timetabel-container, .portfolio-container, .team-container, .advantages-container, .events-container, .about1__container, .footer-container {
     width: 1280px;
     padding-left: 55px;
     padding-right: 55px;
@@ -977,28 +977,29 @@ img {
   padding: 5px;
 }
 
-.service-container {
+.events-container {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url("/mob-Services-and-prices.965409fb.jpg");
 }
 @media screen and (min-width: 768px) {
-  .service-container {
+  .events-container {
     background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url("/tabl-Services-and-prices.07a97fec.jpg");
   }
 }
 @media screen and (min-width: 1280px) {
-  .service-container {
-    background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url("/desk-Services-and-prices.de2cfac1.jpg");
+  .events-container {
+    padding-bottom: 130px;
+    background-image: linear-gradient(to right, rgba(17, 19, 25, 0), rgba(17, 19, 25, 0)), url("/desk-Services-and-prices.de2cfac1.jpg");
   }
 }
 
-.service-container {
+.events-container {
   text-align: center;
 }
 
-.service__subtitle {
+.events__subtitle {
   display: flex;
   align-items: center;
   text-align: start;
@@ -1008,14 +1009,14 @@ img {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(157, 164, 189, 0.6);
+  color: #fec018;
 }
 @media screen and (min-width: 1280px) {
-  .service__subtitle {
+  .events__subtitle {
     padding-top: 130px;
   }
 }
-.service__subtitle::before {
+.events__subtitle::before {
   content: "";
   display: inline-block;
   width: 60px;
@@ -1026,13 +1027,13 @@ img {
   background-color: rgba(157, 164, 189, 0.6);
 }
 @media screen and (min-width: 767px) {
-  .service__subtitle::before {
+  .events__subtitle::before {
     min-width: 45px;
     max-width: 340px;
   }
 }
 
-.service__title {
+.events__title {
   text-align: start;
   margin-top: 20px;
   margin-bottom: 44px;
@@ -1044,18 +1045,18 @@ img {
 }
 
 @media screen and (max-width: 1279px) {
-  .price__container {
+  .dataTime__container {
     padding: 30px;
-    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    background: linear-gradient(180deg, #202417 0%, rgba(23, 26, 36, 0.2) 100%);
   }
 }
 @media screen and (min-width: 1279px) {
-  .price__container {
+  .dataTime__container {
     display: flex;
   }
 }
 
-.service__button {
+.events__button {
   margin-bottom: 84px;
   margin-top: 50px;
   width: 160px;
@@ -1073,59 +1074,59 @@ img {
   transition: 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1280px) {
-  .service__button {
+  .events__button {
     margin-bottom: 130px;
   }
 }
-.service__button:hover, .service__button:focus {
+.events__button:hover, .events__button:focus {
   transform: scale(1.1);
   background-color: #ff6c00;
 }
 
 @media screen and (max-width: 1279px) {
-  .price__list1 {
+  .dataTime__list1 {
     margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .price__list1 {
+  .dataTime__list1 {
     width: 100%;
     padding: 30px 40px;
-    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .price__list2 {
+  .dataTime__list2 {
     width: 100%;
     padding: 30px 40px;
-    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   }
 }
 
-.price__item {
+.dataTime__item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 14px;
   line-height: 2.14;
-  color: #9da4bd;
+  color: #fec018;
 }
-.price__item:not(:last-child) {
+.dataTime__item:not(:last-child) {
   margin-bottom: 20px;
 }
 @media screen and (min-width: 1280px) {
-  .price__item {
+  .dataTime__item {
     font-size: 18px;
   }
 }
 
-.price__from {
+.dataTime__from {
   display: inline-flex;
   align-items: center;
   flex-grow: 1;
 }
-.price__from::before {
+.dataTime__from::before {
   content: " ";
   flex-grow: 1;
   margin-top: 12px;
@@ -1134,6 +1135,14 @@ img {
   padding: 0;
   height: 1px;
   background: rgba(157, 164, 189, 0.12);
+}
+
+.dataTime__link {
+  color: #bd8b03;
+}
+
+.dataTime__link:hover {
+  color: #fec018;
 }
 
 @media screen and (max-width: 767px) {
