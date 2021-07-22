@@ -981,11 +981,11 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url("/mob-Services-and-prices.965409fb.jpg");
+  background-image: linear-gradient(to right, rgba(17, 19, 25, 0), rgba(17, 19, 25, 0)), url("/mob-Services-and-prices.965409fb.jpg");
 }
 @media screen and (min-width: 768px) {
   .events-container {
-    background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url("/tabl-Services-and-prices.07a97fec.jpg");
+    background-image: linear-gradient(to right, rgba(17, 19, 25, 0), rgba(17, 19, 25, 0)), url("/tabl-Services-and-prices.07a97fec.jpg");
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1138,11 +1138,23 @@ img {
 }
 
 .dataTime__link {
-  color: #bd8b03;
+  color: #ffffff;
 }
 
 .dataTime__link:hover {
+  cursor: pointer;
   color: #fec018;
+}
+
+.event_list-title {
+  padding-right: 20px;
+}
+
+.truncate-text-3 {
+  width: 350px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media screen and (max-width: 767px) {

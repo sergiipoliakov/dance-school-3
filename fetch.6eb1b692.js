@@ -117,21 +117,28 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"menu.js":[function(require,module,exports) {
-(function () {
-  var refs = {
-    openModalBtn: document.querySelector('[data-menu-open]'),
-    closeModalBtn: document.querySelector('[data-menu-close]'),
-    modal: document.querySelector('[data-menu]')
-  };
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+})({"fetch.js":[function(require,module,exports) {
+var events;
+var requestOptions = {
+  method: 'GET',
+  redirect: 'follow'
+};
+fetch('https://eg-dance-school-api.herokuapp.com/api/events', requestOptions).then(function (response) {
+  return response.json();
+}).then(function (result) {
+  events = result.data.events;
+  var eventsList = document.querySelector('.dataTime__list1');
 
-  function toggleModal() {
-    document.body.classList.toggle('menu-open');
-    refs.modal.classList.toggle('is-open');
-  }
-})();
+  if (eventsList) {
+    eventsList.innerHTML = events.map(function (event) {
+      return "<li class=\"dataTime__item\">\n          <h3 class=\"event_list-title\">".concat(event.title, "</h3>\n              <p class=\"dataTime__link truncate-text-3\" data-id=\"").concat(event.id, "\">").concat(event.text, "</p>\n              <p class=\"dataTime__from\">").concat(event.date, "</p>\n            </li>");
+    });
+  } // console.log(events);
+
+}).catch(function (error) {
+  return console.log('error', error);
+}); // console.log(eventsList);
+// console.log(events);
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -336,5 +343,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","menu.js"], null)
-//# sourceMappingURL=/menu.234110a1.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","fetch.js"], null)
+//# sourceMappingURL=/fetch.6eb1b692.js.map
