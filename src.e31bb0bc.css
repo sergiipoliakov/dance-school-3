@@ -1157,6 +1157,101 @@ img {
   text-overflow: ellipsis;
 }
 
+/* Lightbox */
+.eventbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--animation-duration) var(--timing-function);
+}
+
+.eventbox.is-open {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.eventbox__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.eventbox__content {
+  background: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  transform: scale(0.95);
+  transition: transform var(--animation-duration) var(--timing-function);
+}
+
+.eventbox.is-open .eventbox__content {
+  transform: scale(1);
+}
+
+.eventbox__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color var(--animation-duration) var(--timing-function);
+  outline: none;
+  background-image: url("/icon-close.1add023a.svg");
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+.eventbox__button:hover,
+.eventbox__button:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__content-title {
+  letter-spacing: 0;
+  text-transform: none;
+  font-family: "s", sans-serif;
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 48px 0 24px 0;
+}
+
+.modal__content-about-title {
+  margin: 0 0 45px 0;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.modal__content-text {
+  font-size: 18px;
+  line-height: 28px;
+}
+
 @media screen and (max-width: 767px) {
   .advantages-container {
     padding-top: 84px;

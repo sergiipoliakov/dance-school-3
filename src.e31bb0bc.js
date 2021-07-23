@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../fonts/Northwell.eot":[["Northwell.7e0027ca.eot","fonts/Northwell.eot"],"fonts/Northwell.eot"],"./../fonts/Northwell.woff":[["Northwell.77d3559d.woff","fonts/Northwell.woff"],"fonts/Northwell.woff"],"./../fonts/Northwell.ttf":[["Northwell.c5c13e30.ttf","fonts/Northwell.ttf"],"fonts/Northwell.ttf"],"./../fonts/Northwell.svg":[["Northwell.2336f004.svg","fonts/Northwell.svg"],"fonts/Northwell.svg"],"./../images/main-bg-img.jpg":[["main-bg-img.e4b0a884.jpg","images/main-bg-img.jpg"],"images/main-bg-img.jpg"],"./../images/service1/mob-Services-and-prices.jpg":[["mob-Services-and-prices.965409fb.jpg","images/service1/mob-Services-and-prices.jpg"],"images/service1/mob-Services-and-prices.jpg"],"./../images/service1/tabl-Services-and-prices.jpg":[["tabl-Services-and-prices.07a97fec.jpg","images/service1/tabl-Services-and-prices.jpg"],"images/service1/tabl-Services-and-prices.jpg"],"./../images/service1/desk-Services-and-prices.jpg":[["desk-Services-and-prices.de2cfac1.jpg","images/service1/desk-Services-and-prices.jpg"],"images/service1/desk-Services-and-prices.jpg"],"/Users/poliakovsergii/Documents/GitHub/dance-school-3/src/images/contacts/mob-contacts.jpg":[["mob-contacts.a9326e9b.jpg","images/contacts/mob-contacts.jpg"],"images/contacts/mob-contacts.jpg"],"/Users/poliakovsergii/Documents/GitHub/dance-school-3/src/images/contacts/tabl-contacts.jpg":[["tabl-contacts.4398bdbd.jpg","images/contacts/tabl-contacts.jpg"],"images/contacts/tabl-contacts.jpg"],"/Users/poliakovsergii/Documents/GitHub/dance-school-3/src/images/contacts/desc-contacts.jpg":[["desc-contacts.969565c6.jpg","images/contacts/desc-contacts.jpg"],"images/contacts/desc-contacts.jpg"],"./../images/icon-close.svg":[["icon-close.1add023a.svg","images/icon-close.svg"],"images/icon-close.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"gallery-items.js":[function(require,module,exports) {
+},{"./../fonts/Northwell.eot":[["Northwell.7e0027ca.eot","fonts/Northwell.eot"],"fonts/Northwell.eot"],"./../fonts/Northwell.woff":[["Northwell.77d3559d.woff","fonts/Northwell.woff"],"fonts/Northwell.woff"],"./../fonts/Northwell.ttf":[["Northwell.c5c13e30.ttf","fonts/Northwell.ttf"],"fonts/Northwell.ttf"],"./../fonts/Northwell.svg":[["Northwell.2336f004.svg","fonts/Northwell.svg"],"fonts/Northwell.svg"],"./../images/main-bg-img.jpg":[["main-bg-img.e4b0a884.jpg","images/main-bg-img.jpg"],"images/main-bg-img.jpg"],"./../images/service1/mob-Services-and-prices.jpg":[["mob-Services-and-prices.965409fb.jpg","images/service1/mob-Services-and-prices.jpg"],"images/service1/mob-Services-and-prices.jpg"],"./../images/service1/tabl-Services-and-prices.jpg":[["tabl-Services-and-prices.07a97fec.jpg","images/service1/tabl-Services-and-prices.jpg"],"images/service1/tabl-Services-and-prices.jpg"],"./../images/service1/desk-Services-and-prices.jpg":[["desk-Services-and-prices.de2cfac1.jpg","images/service1/desk-Services-and-prices.jpg"],"images/service1/desk-Services-and-prices.jpg"],"./../images/icon-close.svg":[["icon-close.1add023a.svg","images/icon-close.svg"],"images/icon-close.svg"],"/Users/poliakovsergii/Documents/GitHub/dance-school-3/src/images/contacts/mob-contacts.jpg":[["mob-contacts.a9326e9b.jpg","images/contacts/mob-contacts.jpg"],"images/contacts/mob-contacts.jpg"],"/Users/poliakovsergii/Documents/GitHub/dance-school-3/src/images/contacts/tabl-contacts.jpg":[["tabl-contacts.4398bdbd.jpg","images/contacts/tabl-contacts.jpg"],"images/contacts/tabl-contacts.jpg"],"/Users/poliakovsergii/Documents/GitHub/dance-school-3/src/images/contacts/desc-contacts.jpg":[["desc-contacts.969565c6.jpg","images/contacts/desc-contacts.jpg"],"images/contacts/desc-contacts.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"gallery-items.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -403,21 +403,71 @@ try {
   _iterator.f();
 }
 },{}],"event-modal.js":[function(require,module,exports) {
-(function () {
-  var listEl = document.querySelector('.dataTime__list1');
-  console.log(listEl); //   const refs = {
-  //     openModalEl: document.querySelector(
-  //       '[data-id="c73906d6-bbec-439b-a137-8559d9b46bd8"]',
-  //     ),
-  //     modal: document.querySelector('.js-eventbox'),
-  //   };
+// (() => {
+//   const listEl = document.querySelector('.dataTime__list1');
+//   console.log(listEl);
+//   const refs = {
+//     openModalEl: document.querySelector(
+//       '[data-id="c73906d6-bbec-439b-a137-8559d9b46bd8"]',
+//     ),
+//     modal: document.querySelector('.js-eventbox'),
+//   };
+//   function openModal(event) {
+//     const linkId = event.target.dataset.id;
+//   }
+//   listEl.addEventListener('click', openModal);
+// })();
+var refs = {
+  listEl: document.querySelector('.dataTime__list1'),
+  closeModalBtn: document.querySelector('[data-action="close-eventbox"]'),
+  modal: document.querySelector('.js-eventbox'),
+  modalContent: document.querySelector('.eventbox__content')
+};
+console.log(refs.modal);
 
-  function openModal(event) {
-    var linkId = event.target.dataset.id;
+function openModal() {
+  refs.modal.classList.toggle('is-open');
+}
+
+function closeModal() {
+  refs.modal.classList.toggle('is-open');
+}
+
+function onLinkClick(event) {
+  var id = event.target.dataset.id;
+
+  if (event.target.className === 'dataTime__link truncate-text-3') {
+    openModal();
+    makeFetch(id);
   }
+}
 
-  listEl.addEventListener('click', openModal);
-})();
+function makeFetch(id) {
+  var requestOptions = {
+    method: 'GET',
+    redirect: 'follow'
+  };
+  fetch("https://eg-dance-school-api.herokuapp.com/api/events/".concat(id), requestOptions).then(function (response) {
+    return response.json();
+  }).then(function (result) {
+    console.log(result);
+    makeModalMarkup(result);
+  }).catch(function (error) {
+    return console.log('error', error);
+  });
+}
+
+function makeModalMarkup(_ref) {
+  var data = _ref.data;
+  console.log(data.event);
+
+  if (data !== null && data !== void 0 && data.event) {
+    refs.modalContent.innerHTML = "<h3 class=\"modal__content-title\">".concat(data.event.title, "</h3>\n\n    <h1 class=\"modal__content-about-title\">\u041E \u0441\u043E\u0431\u044B\u0442\u0438\u0438</h1>\n      <p class=\"modal__content-text\">").concat(data.event.text, "</p>\n      <span class=\"modal__content-date\">").concat(data.event.time, "</span>\n      <p class=\"modal__content-date\">").concat(data.event.date, "</p>\n      ");
+  }
+}
+
+document.addEventListener('click', onLinkClick);
+refs.closeModalBtn.addEventListener('click', closeModal);
 },{}],"index.js":[function(require,module,exports) {
 "use strict";
 
@@ -460,7 +510,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60034" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63874" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
