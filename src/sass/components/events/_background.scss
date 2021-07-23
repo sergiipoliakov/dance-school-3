@@ -4,15 +4,15 @@
   background-repeat: no-repeat;
   background-image: linear-gradient(
       to right,
-      rgba(17, 19, 25, 0.8),
-      rgba(17, 19, 25, 0.8)
+      rgba(17, 19, 25, 0),
+      rgba(17, 19, 25, 0)
     ),
     url('../images/service1/mob-Services-and-prices.jpg');
   @media screen and (min-width: $tablet-min) {
     background-image: linear-gradient(
         to right,
-        rgba(17, 19, 25, 0.8),
-        rgba(17, 19, 25, 0.8)
+        rgba(17, 19, 25, 0),
+        rgba(17, 19, 25, 0)
       ),
       url('../images/service1/tabl-Services-and-prices.jpg');
   }

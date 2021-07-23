@@ -53,9 +53,21 @@
   }
 }
 .dataTime__link {
-  color: #bd8b03;
+  color: $primary-white;
 }
+
 // fec018
 .dataTime__link:hover {
+  cursor: pointer;
   color: $accent-color;
+}
+.event_list-title {
+  padding-right: 20px;
+}
+
+.truncate-text-3 {
+  width: 350px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

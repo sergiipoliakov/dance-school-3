@@ -22,7 +22,7 @@ backdrop.addEventListener('click', onBackDropClick);
 function openModal(evt) {
   const modalImageSrc = evt.target.dataset.source;
   const modalImageAlt = evt.target.alt;
-  //   console.log(modalImageSrc);
+  console.log(modalImageSrc);
 
   const isOnImageClick = evt.target.classList.contains('gallery__image');
   //   console.log(evt);
