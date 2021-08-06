@@ -403,34 +403,27 @@ try {
   _iterator.f();
 }
 },{}],"event-modal.js":[function(require,module,exports) {
-// (() => {
-//   const listEl = document.querySelector('.dataTime__list1');
-//   console.log(listEl);
-//   const refs = {
-//     openModalEl: document.querySelector(
-//       '[data-id="c73906d6-bbec-439b-a137-8559d9b46bd8"]',
-//     ),
-//     modal: document.querySelector('.js-eventbox'),
-//   };
-//   function openModal(event) {
-//     const linkId = event.target.dataset.id;
-//   }
-//   listEl.addEventListener('click', openModal);
-// })();
 var refs = {
   listEl: document.querySelector('.dataTime__list1'),
   closeModalBtn: document.querySelector('[data-action="close-eventbox"]'),
   modal: document.querySelector('.js-eventbox'),
   modalContent: document.querySelector('.eventbox__content')
-};
-console.log(refs.modal);
+}; // console.log(refs.modal);
 
 function openModal() {
-  refs.modal.classList.toggle('is-open');
+  refs.modal.classList.toggle('is-open'); // document.addEventListener('keydown', e => {
+  //   console.log(e.code);
+  //   if (e.code === 'Escape') {
+  //     console.log(e);
+  //   }
+  // });
+
+  window.addEventListener('keydown', onEscKeyPress);
 }
 
 function closeModal() {
   refs.modal.classList.toggle('is-open');
+  window.removeEventListener('keydown', onEscKeyPress);
 }
 
 function onLinkClick(event) {
@@ -447,10 +440,10 @@ function makeFetch(id) {
     method: 'GET',
     redirect: 'follow'
   };
-  fetch("https://eg-dance-school-api.herokuapp.com/api/events/".concat(id), requestOptions).then(function (response) {
+  fetch("https://egdanceschool-api.herokuapp.com/api/events/".concat(id), requestOptions).then(function (response) {
     return response.json();
   }).then(function (result) {
-    console.log(result);
+    // console.log(result);
     makeModalMarkup(result);
   }).catch(function (error) {
     return console.log('error', error);
@@ -459,8 +452,8 @@ function makeFetch(id) {
 
 function makeModalMarkup(_ref) {
   var data = _ref.data;
-  console.log(data.event);
 
+  // console.log(data.event);
   if (data !== null && data !== void 0 && data.event) {
     refs.modalContent.innerHTML = "<h3 class=\"modal__content-title\">".concat(data.event.title, "</h3>\n\n    <h1 class=\"modal__content-about-title\">\u041E \u0441\u043E\u0431\u044B\u0442\u0438\u0438</h1>\n      <p class=\"modal__content-text\">").concat(data.event.text, "</p>\n      <span class=\"modal__content-date\">").concat(data.event.time, "</span>\n      <p class=\"modal__content-date\">").concat(data.event.date, "</p>\n      ");
   }
@@ -468,6 +461,13 @@ function makeModalMarkup(_ref) {
 
 document.addEventListener('click', onLinkClick);
 refs.closeModalBtn.addEventListener('click', closeModal);
+
+function onEscKeyPress(evt) {
+  //   console.log(evt);
+  if (evt.code === 'Escape') {
+    closeModal();
+  }
+}
 },{}],"index.js":[function(require,module,exports) {
 "use strict";
 
@@ -510,7 +510,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63874" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65185" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

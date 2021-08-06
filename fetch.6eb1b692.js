@@ -123,7 +123,7 @@ var requestOptions = {
   method: 'GET',
   redirect: 'follow'
 };
-fetch('https://eg-dance-school-api.herokuapp.com/api/events', requestOptions).then(function (response) {
+fetch('https://egdanceschool-api.herokuapp.com/api/events', requestOptions).then(function (response) {
   return response.json();
 }).then(function (result) {
   events = result.data.events;
@@ -131,7 +131,7 @@ fetch('https://eg-dance-school-api.herokuapp.com/api/events', requestOptions).th
 
   if (eventsList) {
     eventsList.innerHTML = events.map(function (event) {
-      return "<li class=\"dataTime__item\">\n          <h3 class=\"event_list-title\">".concat(event.title, "</h3>\n              <p class=\"dataTime__link truncate-text-3\" data-id=\"").concat(event.id, "\">").concat(event.text, "</p>\n              <p class=\"dataTime__from\">").concat(event.date, "</p>\n            </li>");
+      return "<li class=\"dataTime__item\">\n          <h3 class=\"event_list-title\">".concat(event.title, "</h3>\n              <p class=\"dataTime__link truncate-text-3\" data-id=\"").concat(event._id, "\">").concat(event.text, "</p>\n              <p class=\"dataTime__from\">").concat(event.date, "</p>\n            </li>");
     });
   } // console.log(events);
 
@@ -167,7 +167,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63874" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65185" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
