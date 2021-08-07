@@ -5,7 +5,7 @@ const requestOptions = {
   redirect: 'follow',
 };
 
-fetch('https://eg-dance-school-api.herokuapp.com/api/events', requestOptions)
+fetch('https://egdanceschool-api.herokuapp.com/api/events', requestOptions)
   .then(response => response.json())
   .then(result => {
     events = result.data.events;
@@ -15,7 +15,7 @@ fetch('https://eg-dance-school-api.herokuapp.com/api/events', requestOptions)
         event =>
           `<li class="dataTime__item">
           <h3 class="event_list-title">${event.title}</h3>
-              <p class="dataTime__link truncate-text-3" data-id="${event.id}">${event.text}</p>
+              <p class="dataTime__link truncate-text-3" data-id="${event._id}">${event.text}</p>
               <p class="dataTime__from">${event.date}</p>
             </li>`,
       );

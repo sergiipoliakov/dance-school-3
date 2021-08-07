@@ -1,34 +1,24 @@
-// (() => {
-//   const listEl = document.querySelector('.dataTime__list1');
-//   console.log(listEl);
-
-//   const refs = {
-//     openModalEl: document.querySelector(
-//       '[data-id="c73906d6-bbec-439b-a137-8559d9b46bd8"]',
-//     ),
-//     modal: document.querySelector('.js-eventbox'),
-//   };
-
-//   function openModal(event) {
-//     const linkId = event.target.dataset.id;
-//   }
-
-//   listEl.addEventListener('click', openModal);
-// })();
-
 const refs = {
   listEl: document.querySelector('.dataTime__list1'),
   closeModalBtn: document.querySelector('[data-action="close-eventbox"]'),
   modal: document.querySelector('.js-eventbox'),
   modalContent: document.querySelector('.eventbox__content'),
 };
-console.log(refs.modal);
+// console.log(refs.modal);
 
 function openModal() {
   refs.modal.classList.toggle('is-open');
+  // document.addEventListener('keydown', e => {
+  //   console.log(e.code);
+  //   if (e.code === 'Escape') {
+  //     console.log(e);
+  //   }
+  // });
+  window.addEventListener('keydown', onEscKeyPress);
 }
 function closeModal() {
   refs.modal.classList.toggle('is-open');
+  window.removeEventListener('keydown', onEscKeyPress);
 }
 
 function onLinkClick(event) {
@@ -46,19 +36,19 @@ function makeFetch(id) {
   };
 
   fetch(
-    `https://eg-dance-school-api.herokuapp.com/api/events/${id}`,
+    `https://egdanceschool-api.herokuapp.com/api/events/${id}`,
     requestOptions,
   )
     .then(response => response.json())
     .then(result => {
-      console.log(result);
+      // console.log(result);
       makeModalMarkup(result);
     })
     .catch(error => console.log('error', error));
 }
 
 function makeModalMarkup({ data }) {
-  console.log(data.event);
+  // console.log(data.event);
   if (data?.event) {
     refs.modalContent.innerHTML = `<h3 class="modal__content-title">${data.event.title}</h3>
 
@@ -72,3 +62,10 @@ function makeModalMarkup({ data }) {
 
 document.addEventListener('click', onLinkClick);
 refs.closeModalBtn.addEventListener('click', closeModal);
+
+function onEscKeyPress(evt) {
+  //   console.log(evt);
+  if (evt.code === 'Escape') {
+    closeModal();
+  }
+}
