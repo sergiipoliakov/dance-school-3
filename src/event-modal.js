@@ -4,16 +4,10 @@ const refs = {
   modal: document.querySelector('.js-eventbox'),
   modalContent: document.querySelector('.eventbox__content'),
 };
-// console.log(refs.modal);
 
 function openModal() {
   refs.modal.classList.toggle('is-open');
-  // document.addEventListener('keydown', e => {
-  //   console.log(e.code);
-  //   if (e.code === 'Escape') {
-  //     console.log(e);
-  //   }
-  // });
+
   window.addEventListener('keydown', onEscKeyPress);
 }
 function closeModal() {

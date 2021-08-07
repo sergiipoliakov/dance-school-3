@@ -55,6 +55,7 @@
 .lightbox.is-open {
   opacity: 1;
   pointer-events: initial;
+  z-index: 1;
 }
 
 .lightbox__overlay {
