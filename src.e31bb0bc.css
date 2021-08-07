@@ -1175,6 +1175,7 @@ img {
 .eventbox.is-open {
   opacity: 1;
   pointer-events: initial;
+  z-index: 1;
 }
 
 .eventbox__overlay {
@@ -2069,6 +2070,7 @@ img {
 .lightbox.is-open {
   opacity: 1;
   pointer-events: initial;
+  z-index: 1;
 }
 
 .lightbox__overlay {
