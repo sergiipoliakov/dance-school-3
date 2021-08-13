@@ -1201,7 +1201,7 @@ img {
 }
 
 .eventbox__button {
-  position: absolute;
+  position: fixed;
   top: 8px;
   right: 8px;
   display: flex;
@@ -1213,7 +1213,7 @@ img {
   margin: 0;
   border: none;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: black;
   color: #fff;
   cursor: pointer;
   transition: background-color var(--animation-duration) var(--timing-function);
