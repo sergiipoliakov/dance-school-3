@@ -18,10 +18,12 @@
   }
   &-subtitle {
     @extend %subtitle;
+    color: $accent-color;
     padding-bottom: 20px;
   }
   &-title {
     @extend %h;
+    color: $accent-color;
     padding-bottom: 44px;
   }
   &-list {
@@ -39,7 +41,7 @@
   }
 
   // ! ITEM desctop
-  &-item:not(:last-child) {
+  &-item:not(:nth-child(3n)) {
     @media screen and (min-width: $desktop) {
       margin-right: 30px;
     }
@@ -52,22 +54,30 @@
   }
   &-title-h3 {
     @extend %h;
-    margin-top: 30px;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.38;
     letter-spacing: 0.02em;
     text-align: center;
-    color: $title-color;
+    color: $accent-color;
   }
+
   &-description {
     font-weight: 400;
     font-size: 14px;
+    height: 50px;
     line-height: 1.35;
     letter-spacing: 0.02em;
     text-align: center;
     color: $accent-color;
     margin-top: 8px;
     margin-bottom: 30px;
+  }
+  &-name-description-container {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   }
 }

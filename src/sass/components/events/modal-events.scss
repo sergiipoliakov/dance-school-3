@@ -29,6 +29,8 @@
 }
 
 .eventbox__content {
+  height: 100%;
+  overflow: scroll;
   background: $primary-white;
   padding-left: 20px;
   padding-right: 20px;
@@ -42,7 +44,7 @@
 }
 
 .eventbox__button {
-  position: absolute;
+  position: fixed;
   top: 8px;
   right: 8px;
   display: flex;
@@ -54,7 +56,7 @@
   margin: 0;
   border: none;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: black;
   color: #fff;
   cursor: pointer;
   transition: background-color var(--animation-duration) var(--timing-function);
@@ -83,6 +85,7 @@
 }
 
 .modal__content-about-title {
+  border-bottom: 1px solid $accent-color;
   margin: 0 0 45px 0;
   font-weight: normal;
   font-size: 40px;
@@ -90,6 +93,13 @@
 }
 
 .modal__content-text {
+  max-width: 700px;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 24px;
+  border-bottom: 1px solid $accent-color;
+}
+.modal__content-date {
+  font-weight: 700;
+  color: $accent-color;
+  margin-top: 20px;
 }

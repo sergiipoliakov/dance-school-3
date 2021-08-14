@@ -113,7 +113,7 @@
   text-align: center;
   letter-spacing: 0.05em;
 
-  color: $primary-white;
+  color: $accent-color;
 
   @media screen and (min-width: $tablet-min) {
     text-align: start;
@@ -206,6 +206,9 @@
   }
   // width: 330px;
 }
+.contacts-list {
+  display: flex;
+}
 
 .address-item {
   &:not(:last-child) {
@@ -279,7 +282,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
-  color: $primary-white;
+  color: $accent-color;
 
   &::before {
     // content: '';

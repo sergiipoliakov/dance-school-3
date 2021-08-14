@@ -44,11 +44,11 @@ function makeFetch(id) {
 function makeModalMarkup({ data }) {
   // console.log(data.event);
   if (data?.event) {
-    refs.modalContent.innerHTML = `<h3 class="modal__content-title">${data.event.title}</h3>
+    refs.modalContent.innerHTML = `<h3 class="modal__content-title">Побродней про подію</h3>
 
-    <h1 class="modal__content-about-title">О событии</h1>
+    <h1 class="modal__content-about-title">${data.event.title}</h1>
       <p class="modal__content-text">${data.event.text}</p>
-      <span class="modal__content-date">${data.event.time}</span>
+      <p class="modal__content-date">${data.event.time}</p>
       <p class="modal__content-date">${data.event.date}</p>
       `;
   }
