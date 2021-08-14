@@ -449,7 +449,7 @@ function makeModalMarkup(_ref) {
 
   // console.log(data.event);
   if (data !== null && data !== void 0 && data.event) {
-    refs.modalContent.innerHTML = "<h3 class=\"modal__content-title\">".concat(data.event.title, "</h3>\n\n    <h1 class=\"modal__content-about-title\">\u041E \u0441\u043E\u0431\u044B\u0442\u0438\u0438</h1>\n      <p class=\"modal__content-text\">").concat(data.event.text, "</p>\n      <span class=\"modal__content-date\">").concat(data.event.time, "</span>\n      <p class=\"modal__content-date\">").concat(data.event.date, "</p>\n      ");
+    refs.modalContent.innerHTML = "<h3 class=\"modal__content-title\">\u041F\u043E\u0431\u0440\u043E\u0434\u043D\u0435\u0439 \u043F\u0440\u043E \u043F\u043E\u0434\u0456\u044E</h3>\n\n    <h1 class=\"modal__content-about-title\">".concat(data.event.title, "</h1>\n      <p class=\"modal__content-text\">").concat(data.event.text, "</p>\n      <p class=\"modal__content-date\">").concat(data.event.time, "</p>\n      <p class=\"modal__content-date\">").concat(data.event.date, "</p>\n      ");
   }
 }
 
@@ -504,7 +504,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62254" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52963" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

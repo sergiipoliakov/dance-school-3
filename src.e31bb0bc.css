@@ -893,18 +893,13 @@ img {
     display: block;
   }
 }
-@media screen and (min-width: 1280px) {
-  .about1-foto {
-    display: flex;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .about1-skill:not(:last-child) {
+  .about1-skill:not(:nth-child(2n)) {
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .about1-skill:not(:last-child) {
+  .about1-skill:not(:nth-child(2n)) {
     margin-right: 30px;
   }
 }
@@ -1188,6 +1183,8 @@ img {
 }
 
 .eventbox__content {
+  height: 100%;
+  overflow: scroll;
   background: #ffffff;
   padding-left: 20px;
   padding-right: 20px;
@@ -1242,6 +1239,7 @@ img {
 }
 
 .modal__content-about-title {
+  border-bottom: 1px solid #fec018;
   margin: 0 0 45px 0;
   font-weight: normal;
   font-size: 40px;
@@ -1249,8 +1247,16 @@ img {
 }
 
 .modal__content-text {
+  width: 700px;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 24px;
+  border-bottom: 1px solid #fec018;
+}
+
+.modal__content-date {
+  font-weight: 700;
+  color: #fec018;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1775,6 +1781,10 @@ img {
   .address {
     width: 230px;
   }
+}
+
+.contacts-list {
+  display: flex;
 }
 
 .address-item:not(:last-child) {
