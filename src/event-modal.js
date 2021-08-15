@@ -24,7 +24,7 @@ function onLinkClick(event) {
 }
 
 function makeFetch(id) {
-  var requestOptions = {
+  const requestOptions = {
     method: 'GET',
     redirect: 'follow',
   };

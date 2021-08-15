@@ -1,6 +1,7 @@
 .timetabel-container {
   @extend %container;
-  text-align: center;
+  // text-align: center;
+  color: $accent-color;
 }
 
 .timetabel__subtitle {
@@ -47,42 +48,34 @@
   letter-spacing: 0.05em;
   color: $accent-color;
 }
-
-.price__container {
-  @media screen and(max-width: $tablet-max) {
-    padding: 30px;
-    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-  }
-
-  @media screen and (min-width: $tablet-max) {
-    display: flex;
-  }
+.timetabel__address {
+  max-width: 700px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 32px;
+}
+.timetabel__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.timetabel__item {
+  width: 340px;
+  height: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
-.timetabel__button {
-  margin-bottom: 84px;
-  margin-top: 50px;
-  width: 160px;
-  height: 40px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.14;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  background-color: transparent;
-  border: 1px solid $accent-color;
-  border-radius: 25px;
-  color: $primary-white;
-  cursor: pointer;
-  transition: $timing-animation;
+// .price__container {
+//   @media screen and(max-width: $tablet-max) {
+//     padding: 30px;
+//     background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+//   }
 
-  @media screen and(min-width: $desktop) {
-    margin-bottom: 130px;
-  }
-
-  &:hover,
-  &:focus {
-    transform: scale(1.1);
-    background-color: $accent-color;
-  }
-}
+//   @media screen and (min-width: $tablet-max) {
+//     display: flex;
+//   }
+// }
