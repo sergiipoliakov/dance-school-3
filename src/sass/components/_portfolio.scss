@@ -49,6 +49,7 @@
 }
 
 .portfolio-list .item {
+  height: 250px;
   @media screen and (min-width: $tablet-min) {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;

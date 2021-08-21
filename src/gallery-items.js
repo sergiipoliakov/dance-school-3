@@ -1,9 +1,42 @@
 export default [
   {
     preview:
-      'https://cdn.pixabay.com/photo/2021/07/02/20/35/eg-6382509__340.jpg',
+      'https://cdn.pixabay.com/photo/2021/08/21/12/19/ballerina-6562632__340.jpg',
     original:
-      'https://cdn.pixabay.com/photo/2021/07/02/20/35/eg-6382509_1280.jpg',
+      'https://cdn.pixabay.com/photo/2021/08/21/12/19/ballerina-6562632_1280.jpg',
+    name: 'Елена Головань',
+    description: 'qwe',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2021/08/21/12/20/ballerina-6562638__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2021/08/21/12/20/ballerina-6562638_1280.jpg',
+    name: 'Елена Головань',
+    description: 'qwe',
+  },
+
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2021/08/21/12/19/ballerina-6562636__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2021/08/21/12/19/ballerina-6562636_1280.jpg',
+    name: 'Елена Головань',
+    description: 'qwe',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2021/08/21/12/19/ballerina-6562634__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2021/08/21/12/19/ballerina-6562634_1280.jpg',
+    name: 'Елена Головань',
+    description: 'qwe',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2021/08/21/12/19/ballerina-6562631__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2021/08/21/12/19/ballerina-6562631_1280.jpg',
     name: 'Елена Головань',
     description: 'qwe',
   },
