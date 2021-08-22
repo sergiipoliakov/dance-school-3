@@ -48,27 +48,9 @@
   letter-spacing: 0.05em;
   color: $accent-color;
 }
-.timetabel__address {
-  max-width: 700px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 22px;
-  margin-bottom: 32px;
+.timetabel__table {
+  overflow: scroll;
 }
-.timetabel__list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-.timetabel__item {
-  width: 340px;
-  height: auto;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 20px;
-}
-
 // .price__container {
 //   @media screen and(max-width: $tablet-max) {
 //     padding: 30px;
