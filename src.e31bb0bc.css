@@ -1929,10 +1929,19 @@ img {
   }
 }
 
+.timetabel__title {
+  text-align: start;
+  margin-top: 20px;
+  margin-bottom: 44px;
+  font-family: Northwell;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  color: #fec018;
+}
+
 .timetabel__table {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: scroll;
 }
 
