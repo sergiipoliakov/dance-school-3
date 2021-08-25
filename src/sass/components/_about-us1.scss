@@ -19,6 +19,8 @@
   &-subtitle {
     @extend %subtitle;
     padding-bottom: 20px;
+    position: relative;
+    display: block;
   }
   &-foto {
     @media screen and (max-width: $mobile-max) {
@@ -99,4 +101,15 @@
 .dance-list > li {
   letter-spacing: 0.02em;
   padding: 5px;
+}
+.baletShusIcon {
+  position: absolute;
+  top: -25px;
+  right: -50px;
+  width: 150px;
+  height: 100px;
+  background-image: url('../images/baletShus.svg');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }

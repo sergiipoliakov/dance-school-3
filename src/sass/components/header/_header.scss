@@ -119,3 +119,24 @@
     outline: none;
   }
 }
+
+.baletShusIconLogo {
+  position: absolute;
+
+  width: 150px;
+  height: 100px;
+  background-image: url('../images/baletShus.svg');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+  }
+  @media screen and (min-width: 768px) {
+    top: 10px;
+    left: -50px;
+    // opacity: 0;
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
