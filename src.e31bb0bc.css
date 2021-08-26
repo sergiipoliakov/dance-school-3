@@ -337,7 +337,7 @@ img {
 
 .baletShusIconLogo {
   position: absolute;
-  width: 150px;
+  width: 100px;
   height: 100px;
   background-image: url("/baletShus.f9787d21.svg");
   background-position: center;
@@ -347,7 +347,7 @@ img {
 @media screen and (min-width: 768px) {
   .baletShusIconLogo {
     top: 10px;
-    left: -50px;
+    left: 0px;
   }
 }
 .menu {
@@ -389,7 +389,7 @@ img {
   position: absolute;
   top: 10px;
   left: 0;
-  width: 150px;
+  width: 100px;
   height: 100px;
   background-image: url("/baletShus.f9787d21.svg");
   background-position: center;
@@ -992,15 +992,27 @@ img {
 .baletShusIcon {
   position: absolute;
   top: -25px;
-  right: -50px;
-  width: 150px;
+  right: -40px;
+  width: 100px;
   height: 100px;
   background-image: url("/baletShus.f9787d21.svg");
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
 }
-
+@media screen and (max-width: 767px) {
+  .baletShusIcon {
+    position: absolute;
+    top: -25px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-image: url("/baletShus.f9787d21.svg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
 .events-container {
   background-size: cover;
   background-position: center;
