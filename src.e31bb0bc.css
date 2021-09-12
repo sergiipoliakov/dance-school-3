@@ -1192,6 +1192,7 @@ img {
 
 .truncate-text-3 {
   width: 350px;
+  height: 40px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1284,7 +1285,6 @@ img {
 }
 
 .modal__content-about-title {
-  border-bottom: 1px solid #fec018;
   margin: 0 0 45px 0;
   font-weight: normal;
   font-size: 40px;
@@ -1292,10 +1292,15 @@ img {
 }
 
 .modal__content-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
   max-width: 700px;
   font-size: 18px;
   line-height: 24px;
+  border-top: 1px solid #fec018;
   border-bottom: 1px solid #fec018;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .modal__content-date {
