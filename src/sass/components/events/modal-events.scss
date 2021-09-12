@@ -85,7 +85,6 @@
 }
 
 .modal__content-about-title {
-  border-bottom: 1px solid $accent-color;
   margin: 0 0 45px 0;
   font-weight: normal;
   font-size: 40px;
@@ -93,10 +92,17 @@
 }
 
 .modal__content-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
   max-width: 700px;
   font-size: 18px;
   line-height: 24px;
+  border-top: 1px solid $accent-color;
+
   border-bottom: 1px solid $accent-color;
+
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 .modal__content-date {
   font-weight: 700;

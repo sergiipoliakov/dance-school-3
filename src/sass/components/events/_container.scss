@@ -1,6 +1,7 @@
 .events-container {
   @extend %container;
   text-align: center;
+  padding-bottom: 130px;
 }
 
 .events__subtitle {
@@ -16,7 +17,8 @@
   color: $accent-color;
 
   @media screen and(min-width: $desktop) {
-    padding-top: 130px;
+    // padding-top: 130px;
+    // padding-bottom: 130px;
   }
 
   &::before {
