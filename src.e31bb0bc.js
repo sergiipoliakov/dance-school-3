@@ -197,6 +197,28 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _default = [{
+  preview: 'https://cdn.pixabay.com/photo/2021/10/27/12/53/12-53-52-29__340.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/10/27/12/53/12-53-52-29_1280.jpg',
+  name: 'Елена Головань',
+  description: 'qwe'
+}, {
+  preview: 'https://cdn.pixabay.com/photo/2021/10/27/12/53/12-53-43-381__340.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/10/27/12/53/12-53-43-381_1280.jpg',
+  name: 'Елена Головань',
+  description: 'qwe'
+}, {
+  preview: 'https://cdn.pixabay.com/photo/2021/10/27/12/53/12-53-31-64__340.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/10/27/12/53/12-53-31-64_1280.jpg',
+  name: 'Елена Головань',
+  description: 'qwe'
+}, {
+  preview: 'https://cdn.pixabay.com/photo/2021/10/27/12/53/12-53-30-41__340.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/10/27/12/53/12-53-30-41_1280.jpg',
+  name: 'Елена Головань',
+  description: 'qwe'
+}, //
+//
+{
   preview: 'https://cdn.pixabay.com/photo/2021/08/21/12/19/ballerina-6562632__340.jpg',
   original: 'https://cdn.pixabay.com/photo/2021/08/21/12/19/ballerina-6562632_1280.jpg',
   name: 'Елена Головань',
@@ -524,7 +546,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58130" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62778" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
