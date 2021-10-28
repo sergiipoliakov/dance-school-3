@@ -202,13 +202,13 @@ var _default = [{
   name: 'Елена Головань',
   description: 'qwe'
 }, {
-  preview: 'https://cdn.pixabay.com/photo/2021/10/27/12/53/12-53-43-381__340.jpg',
-  original: 'https://cdn.pixabay.com/photo/2021/10/27/12/53/12-53-43-381_1280.jpg',
+  preview: 'https://cdn.pixabay.com/photo/2021/10/27/12/53/egdanceschool-6747217__340.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/10/27/12/53/egdanceschool-6747217_1280.jpg',
   name: 'Елена Головань',
   description: 'qwe'
 }, {
-  preview: 'https://cdn.pixabay.com/photo/2021/10/27/12/53/12-53-31-64__340.jpg',
-  original: 'https://cdn.pixabay.com/photo/2021/10/27/12/53/12-53-31-64_1280.jpg',
+  preview: 'https://cdn.pixabay.com/photo/2021/10/27/12/53/egdanceschool-6747213__340.jpg',
+  original: 'https://cdn.pixabay.com/photo/2021/10/27/12/53/egdanceschool-6747213_1280.jpg',
   name: 'Елена Головань',
   description: 'qwe'
 }, {
@@ -546,7 +546,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62778" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54954" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
