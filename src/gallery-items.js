@@ -1,6 +1,40 @@
 export default [
   {
     preview:
+      'https://cdn.pixabay.com/photo/2021/10/27/12/53/12-53-52-29__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2021/10/27/12/53/12-53-52-29_1280.jpg',
+    name: 'Елена Головань',
+    description: 'qwe',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2021/10/27/12/53/egdanceschool-6747217__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2021/10/27/12/53/egdanceschool-6747217_1280.jpg',
+    name: 'Елена Головань',
+    description: 'qwe',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2021/10/27/12/53/egdanceschool-6747213__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2021/10/27/12/53/egdanceschool-6747213_1280.jpg',
+    name: 'Елена Головань',
+    description: 'qwe',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2021/10/27/12/53/12-53-30-41__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2021/10/27/12/53/12-53-30-41_1280.jpg',
+    name: 'Елена Головань',
+    description: 'qwe',
+  },
+  //
+  //
+  {
+    preview:
       'https://cdn.pixabay.com/photo/2021/08/21/12/19/ballerina-6562632__340.jpg',
     original:
       'https://cdn.pixabay.com/photo/2021/08/21/12/19/ballerina-6562632_1280.jpg',
