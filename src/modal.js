@@ -5,7 +5,6 @@ const lightboxContainer = document.querySelector('.js-lightbox');
 const galleryList = document.querySelector('.js-gallery');
 
 const modalImage = document.querySelector('.lightbox__image');
-// console.log(modalImage);
 
 const closeModalBtn = document.querySelector(
   'button[data-action="close-lightbox"]',
@@ -22,10 +21,8 @@ backdrop.addEventListener('click', onBackDropClick);
 function openModal(evt) {
   const modalImageSrc = evt.target.dataset.source;
   const modalImageAlt = evt.target.alt;
-  console.log(modalImageSrc);
 
   const isOnImageClick = evt.target.classList.contains('gallery__image');
-  //   console.log(evt);
 
   if (!isOnImageClick) {
     return;
@@ -52,7 +49,6 @@ function closeModal() {
 function makeOriginalImage(src, alt) {
   modalImage.src = src;
   modalImage.alt = alt;
-  //   console.log(modalImage);
 }
 
 function onBackDropClick() {
@@ -70,13 +66,10 @@ function onArrowRightClick(evt) {
   // Ищем текущую картинку в массиве images.find
 
   const currentImage = images.find(image => image.original === modalImage.src);
-  //   console.log(currentImage);
 
   if (evt.code === 'ArrowRight') {
     //   к индексу текущей картинке добавим 1 чтоб назначить следующую картинку
     const nextModalImageIndex = images.indexOf(currentImage) + 1;
-    // console.log(nextModalImageIndex);
-    // console.log(images[nextModalImageIndex]);
 
     // когда все картинки в массиве закончелись назначаем первую картинку в массиве
     if (images[nextModalImageIndex] === undefined) {
@@ -98,7 +91,6 @@ function onArrowLeftClick(evt) {
   if (evt.code === 'ArrowLeft') {
     //   от индексу текущей картинке отнимем 1 чтоб назначить предыдущую картинку
     const previousModalImageIndex = images.indexOf(currentImage) - 1;
-    // console.log(images[previousModalImageIndex]);
 
     // когда все картинки в массиве закончелись назначаем последнюю картинку в массиве
     if (images[previousModalImageIndex] === undefined) {
