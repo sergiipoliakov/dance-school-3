@@ -310,8 +310,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var lightboxContainer = document.querySelector('.js-lightbox');
 var galleryList = document.querySelector('.js-gallery');
-var modalImage = document.querySelector('.lightbox__image'); // console.log(modalImage);
-
+var modalImage = document.querySelector('.lightbox__image');
 var closeModalBtn = document.querySelector('button[data-action="close-lightbox"]');
 var backdrop = document.querySelector('.lightbox__overlay');
 galleryList.addEventListener('click', openModal);
@@ -321,8 +320,7 @@ backdrop.addEventListener('click', onBackDropClick);
 function openModal(evt) {
   var modalImageSrc = evt.target.dataset.source;
   var modalImageAlt = evt.target.alt;
-  console.log(modalImageSrc);
-  var isOnImageClick = evt.target.classList.contains('gallery__image'); //   console.log(evt);
+  var isOnImageClick = evt.target.classList.contains('gallery__image');
 
   if (!isOnImageClick) {
     return;
@@ -346,7 +344,7 @@ function closeModal() {
 
 function makeOriginalImage(src, alt) {
   modalImage.src = src;
-  modalImage.alt = alt; //   console.log(modalImage);
+  modalImage.alt = alt;
 }
 
 function onBackDropClick() {
@@ -364,14 +362,11 @@ function onArrowRightClick(evt) {
   // Ищем текущую картинку в массиве images.find
   var currentImage = _galleryItems.default.find(function (image) {
     return image.original === modalImage.src;
-  }); //   console.log(currentImage);
-
+  });
 
   if (evt.code === 'ArrowRight') {
     //   к индексу текущей картинке добавим 1 чтоб назначить следующую картинку
-    var nextModalImageIndex = _galleryItems.default.indexOf(currentImage) + 1; // console.log(nextModalImageIndex);
-    // console.log(images[nextModalImageIndex]);
-    // когда все картинки в массиве закончелись назначаем первую картинку в массиве
+    var nextModalImageIndex = _galleryItems.default.indexOf(currentImage) + 1; // когда все картинки в массиве закончелись назначаем первую картинку в массиве
 
     if (_galleryItems.default[nextModalImageIndex] === undefined) {
       modalImage.src = _galleryItems.default[0].original;
@@ -393,8 +388,7 @@ function onArrowLeftClick(evt) {
 
   if (evt.code === 'ArrowLeft') {
     //   от индексу текущей картинке отнимем 1 чтоб назначить предыдущую картинку
-    var previousModalImageIndex = _galleryItems.default.indexOf(currentImage) - 1; // console.log(images[previousModalImageIndex]);
-    // когда все картинки в массиве закончелись назначаем последнюю картинку в массиве
+    var previousModalImageIndex = _galleryItems.default.indexOf(currentImage) - 1; // когда все картинки в массиве закончелись назначаем последнюю картинку в массиве
 
     if (_galleryItems.default[previousModalImageIndex] === undefined) {
       modalImage.src = _galleryItems.default[_galleryItems.default.length - 1].original;
@@ -546,7 +540,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62295" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61362" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
